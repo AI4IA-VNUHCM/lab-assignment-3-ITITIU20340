@@ -14,18 +14,17 @@ Ex:
 
 void Ex1(int arr[], int n){
 	//Your codes here
-    int t= 1;
-	for (int i = 0; i < (n-2)/2;i++ ){
-		if (arr[i] != arr[n - 1 -i]){
-			t = 0;
-			break;
-		}
-	}
-	if(t == 1){
-		printf("symmetric");
-	} else {
-		printf("asymmetric");
-	}
+    int t=0;
+    for (int i=0; i<n/2; i++) {
+            if (arr[i]==arr[n-1-i]) {
+                t++;
+            }
+        }
+        if ( t==n/2) {
+            printf("symmetric");
+        } else {
+            printf("asymmetric");
+        }
 }
 
 int main(int argc, char *argv[]) {
