@@ -24,7 +24,7 @@ void Ex1(int arr[], int n){
 	if(t){
 		printf("symmetric");
 	} else {
-		printf("Asymmetric");
+		printf("asymmetric");
 	}
 }
 
